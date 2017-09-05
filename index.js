@@ -14,7 +14,9 @@ app.set('views','./views');
 
 //Require the Router we defined in policies.js
 var policies = require('./policies.js');
+var claims = require('./claims.js');
 //Use the Router on the sub route /policies
 app.use('/policies', policies);
+app.use('/claims', claims);
 
 app.listen(process.env.PORT || 3000);

@@ -1,7 +1,7 @@
 doctype html
 html
    head
-      title = "Hello Pug"
+      title = "Policies List"
       link(rel="stylesheet", href="/stylesheet.css")
    body
       h1.test List of Policies available:
@@ -10,13 +10,13 @@ html
            li
               a(href="/policies/" + parseInt(i+1)) #{policies[i].name}
            br  
-      // form(action = "/", method = "POST")
+      // form(action = "/claims", method = "POST")
       //    div
-      //       label(for = "say") Say:
-      //       input(name = "say" value = "Hi")
+      //       label(for = "name") Name:
+      //       input(name = "name")
       //    br
       //    div
-      //       label(for = "to") To:
-      //       input(name = "to" value = "Express forms")
+      //       label(for = "policyno") Policyno:
+      //       input(name = "policyno" )
       //    br
-      //    button(type = "submit") Send my greetings  
+      //    button(type = "submit") Register

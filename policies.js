@@ -1,10 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var policies = [
-   {id: 1, name: "Policy1", dur: 1},
-   {id: 2, name: "Policy2", dur: 2},
-   {id: 3, name: "Policy3", dur: 3},
-   {id: 4, name: "Policy4", dur: 4}
+   {id: 1, name: "Policy1", dur: 1}
 ];
 
 //Routes will go here
@@ -23,7 +20,7 @@ router.get('/', function(req, res){
 //    }
 // );
 router.get('/:id',function(req, res){
-	res.send("<a href=/policies/" + req.params.id + "/claims>Claim</a>");
+	res.send("<a href='/claims'>Claim</a>");
 });
 
 module.exports = router;

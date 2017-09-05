@@ -1,0 +1,15 @@
+doctype html
+html
+   head
+      title = "Claim"
+   body
+      form(action = "/claims", method = "POST")
+         div
+            label(for = "name") Name:
+            input(name = "name")
+         br
+         div
+            label(for = "policyno") Policy No:
+            input(name = "policyno" )
+         br
+         button(type = "submit") Register
